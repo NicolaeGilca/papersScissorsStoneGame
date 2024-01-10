@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="/css/mian.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="game">
+      <div class="game__container">
+        <div class="game__wrapper">
+          <h2 class="game_title">
+            <span class="game__color-title-rock">Rock</span
+            ><span class="game__color-title-paper">Paper</span
+            ><span class="game__color-title-scissors">Scissors</span>
+          </h2>
+
+          <div class="game__action">
+            <div class="game__action-wrapper">
+              <h2 class="game__player-name">User</h2>
+              <div class="game__player-1 game__player">
+                <img class="game__img-1" src="/img/secret.png" alt="game-1" />
+              </div>
+              <div class="game__user">
+                <button
+                  class="game__user-choise game__user-choise-1"
+                  style="background-color: var(--rock-color)"
+                >
+                  <img src="/img/rock-second.png" width="100%" alt="" />
+                </button>
+                <button
+                  class="game__user-choise game__user-choise-2"
+                  style="background-color: var(--paper-color)"
+                >
+                  <img src="/img/paper-second.png" width="100%" alt="" />
+                </button>
+                <button
+                  class="game__user-choise game__user-choise-3"
+                  style="background-color: var(--scissors-color)"
+                  data-action="set-scissors"
+                >
+                  <img src="/img/scissors-second.png" width="100%" alt="" />
+                </button>
+              </div>
+            </div>
+            <span class="game__versus">VS</span>
+
+            <div class="game__action-wrapper">
+              <h2 class="game__player-name">Computer</h2>
+
+              <div class="game__player-2 game__player">
+                <img class="game__img-2" src="/img/secret.png" alt="game-2" />
+              </div>
+            </div>
+          </div>
+          <button class="game__btn">Play</button>
+          <p class="game__result"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

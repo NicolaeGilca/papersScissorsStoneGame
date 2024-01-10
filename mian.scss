@@ -1,0 +1,118 @@
+:root {
+  --rock-color: #2fb464;
+  --paper-color: #697cbe;
+  --scissors-color: #d48eff;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #dee7ff;
+}
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+.game {
+  &_title {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    span {
+      padding: 0 5px;
+    }
+  }
+
+  &__container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__color-title-rock {
+    background-color: var(--rock-color);
+  }
+
+  &__color-title-paper {
+    background-color: var(--paper-color);
+  }
+
+  &__color-title-scissors {
+    background-color: var(--scissors-color);
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &__player {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border: 5px solid white;
+    transition: 0.2s ease-in;
+    img {
+      transition: 0.15s ease-in;
+      width: 80%;
+    }
+  }
+  &__versus {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  &__result {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  &__btn {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    transition: 0.2s ease-in;
+    &:active {
+      background-color: #a7a7a7;
+    }
+  }
+  &__player-1 {
+    position: relative;
+  }
+
+  &__user {
+    position: absolute;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  &__user-choise {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,153 @@
+:root {
+  --rock-color: #2fb464;
+  --paper-color: #697cbe;
+  --scissors-color: #d48eff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #dee7ff;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.game_title {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.game_title span {
+  padding: 0 5px;
+}
+
+.game__container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.game__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.game__color-title-rock {
+  background-color: var(--rock-color);
+}
+
+.game__color-title-paper {
+  background-color: var(--paper-color);
+}
+
+.game__color-title-scissors {
+  background-color: var(--scissors-color);
+}
+
+.game__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.game__player {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  border: 5px solid white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.game__player img {
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
+  width: 80%;
+}
+
+.game__versus {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.game__result {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.game__btn {
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 24px;
+  border: 2px black solid;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.game__btn:active {
+  background-color: #a7a7a7;
+}
+
+.game__player-1 {
+  position: relative;
+}
+
+.game__user {
+  position: absolute;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.game__user-choise {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=mian.css.map */
