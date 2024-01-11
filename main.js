@@ -2,9 +2,9 @@ let firstPlayer = document.querySelector(".game__player-1");
 let secondPlayer = document.querySelector(".game__player-2");
 let btnGame = document.querySelector(".game__btn");
 
-let choseRock = document.querySelector(".game__user-choise-1");
-let chosePaper = document.querySelector(".game__user-choise-2");
-let choseScissors = document.querySelector(".game__user-choise-3");
+let choseRock = document.querySelector(".game__user-chose-1");
+let chosePaper = document.querySelector(".game__user-chose-2");
+let choseScissors = document.querySelector(".game__user-chose-3");
 
 // pun un lister pe button
 btnGame.addEventListener("click", function gameStart() {
