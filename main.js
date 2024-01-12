@@ -78,7 +78,6 @@ if(firstPlayer.value === undefined){
   if (
     (firstPlayer.value === 1 && secondPlayer.value === 3) ||
     (firstPlayer.value === 2 && secondPlayer.value === 1) ||
-    (firstPlayer.value === 3 && secondPlayer.value === 1) ||
     (firstPlayer.value === 3 && secondPlayer.value === 2)
   ) {
     gameResult.innerHTML = `Win ${playerName}!`;
