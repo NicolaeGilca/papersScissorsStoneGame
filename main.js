@@ -26,22 +26,28 @@ choseRock.addEventListener("click", ()=>{
   firstPlayer.value = 1;
   borderColorFirst.style.background = "var(--rock-color)";
       gameImgOne.src = "img/rock.png";
-  console.log(firstPlayer.value)
+ 
 })
 
 chosePaper.addEventListener("click", ()=>{
   firstPlayer.value = 2;
   gameImgOne.src = "img/paper.png";
   borderColorFirst.style.background = "var(--paper-color)";
-  console.log(firstPlayer.value)
+  
 })
 
 choseScissors.addEventListener("click", ()=>{
   firstPlayer.value = 3;
   gameImgOne.src = "img/scissors.png";
       borderColorFirst.style.background = "var(--scissors-color)";
-  console.log(firstPlayer.value)
+  
 })
+
+//adaugarea scoru;ui pentru fiecare jucator 
+
+let scoreUser = 0;
+let scoreComputer = 0;
+
 
 // pun un lister pe button de start
 btnGame.addEventListener("click", function gameStart() {
@@ -75,18 +81,47 @@ if(firstPlayer.value === undefined){
   //conditiile jocului
 
   let gameResult = document.querySelector(".game__result");
+  let gameScoreUser = document.querySelector(".game__score-user");
+  let gameScoreComputer = document.querySelector(".game__score-computer")
+  
+
+  
+
   if (
     (firstPlayer.value === 1 && secondPlayer.value === 3) ||
     (firstPlayer.value === 2 && secondPlayer.value === 1) ||
     (firstPlayer.value === 3 && secondPlayer.value === 2)
   ) {
     gameResult.innerHTML = `Win ${playerName}!`;
+    gameScoreUser.innerHTML += "<div class='plusOnePoint'></div>";
+    scoreUser++;
+    
+    if(scoreUser === 5) {
+      alert(`${playerName} are the winner!`)
+
+    }
+    
+
+
+    
   } else if (firstPlayer.value === secondPlayer.value) {
     gameResult.innerHTML = "Nobody win!";
   } else {
     gameResult.innerHTML = "Computer win!";
+    gameScoreComputer.innerHTML += "<div class='plusOnePoint'></div>"
+    scoreComputer++;
+
+    if(scoreComputer === 5) {
+      alert("Computer are the winnwer!")
+
+    }
+ 
+    
   }
-  
+
+  console.log(scoreUser);
+  console.log(scoreComputer);
+
   playerTwo();
 });
 
