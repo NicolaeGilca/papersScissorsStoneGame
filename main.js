@@ -6,12 +6,12 @@ nameMod.innerHTML = playerName;
 //declararea variabilelor principale 
 let firstPlayer = document.querySelector(".game__player-1");
 let secondPlayer = document.querySelector(".game__player-2");
-let btnGame = document.querySelector(".game__btn");
+const btnGame = document.querySelector(".game__btn");
 
 //declararea variabilelor secundare 
-let choseRock = document.querySelector(".game__user-chose-1");
-let chosePaper = document.querySelector(".game__user-chose-2");
-let choseScissors = document.querySelector(".game__user-chose-3");
+const choseRock = document.querySelector(".game__user-chose-1");
+const chosePaper = document.querySelector(".game__user-chose-2");
+const choseScissors = document.querySelector(".game__user-chose-3");
 
 let gameImgOne = document.querySelector(".game__img-1");
 let gameImgTwo = document.querySelector(".game__img-2");
